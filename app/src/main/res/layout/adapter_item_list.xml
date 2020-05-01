@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff">
+    <LinearLayout
+        android:id="@+id/itemProject"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/riple_rect_default">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="start"
+            android:padding="8dp">
+            <TextView
+                android:id="@+id/title"
+                android:text="title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="@color/blackText"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:drawableStart="@drawable/ic_logo_24dp"
+                android:drawableLeft="@drawable/ic_logo_24dp"
+                android:gravity="center|start"
+                android:autoSizeMaxTextSize="50dp"/>
+            <TextView
+                android:id="@+id/subTitle"
+                android:text="subTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@color/grayText"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_gravity="end"
+            android:gravity="end">
+
+            <ImageButton
+                android:id="@+id/btnInfo"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_info_black_24dp"
+                android:background="@drawable/riple_rect_default"
+                tools:ignore="ContentDescription" />
+
+            <ImageButton
+                android:id="@+id/btnEdit"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_mode_edit_black_24dp"
+                android:background="@drawable/riple_rect_default"
+                tools:ignore="ContentDescription" />
+
+            <ImageButton
+                android:id="@+id/btnDelete"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_delete1_black_24dp"
+                android:background="@drawable/riple_rect_default"
+                tools:ignore="ContentDescription" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View style="@style/border_horizon"/>
+
+</LinearLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>RESERVA_INDIGENA.kml</name>
+	<StyleMap id="m_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Placemark>
+		<name>RESERVA_INDIGENA</name>
+		<styleUrl>#m_ylw-pushpin</styleUrl>
+		<Polygon>
+			<tessellate>1</tessellate>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+						-46.88685520417632,-2.218835385979086,0 -46.63158369873187,-3.029581849595973,0 -46.45858155865354,-3.074755154420246,0 -46.2918194757264,-3.168652705084218,0 -46.16136839622417,-3.19941009530438,0 -46.03572570255904,-3.206016005573675,0 -45.97118482305807,-3.244570294835552,0 -45.85446184257078,-3.121418621338704,0 -45.9189238446662,-3.08727878581129,0 -45.92375267465764,-3.063161967443731,0 -45.91545639087613,-3.03442876183529,0 -45.89859983050612,-2.992346615718098,0 -45.86642616684956,-2.9456165666955,0 -45.86706029235911,-2.910443399440911,0 -46.14694928447701,-2.495749366068264,0 -46.40661867713155,-2.493497359180125,0 -46.70038882440764,-2.127925954024572,0 -46.88685520417632,-2.218835385979086,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+</Document>
+</kml>

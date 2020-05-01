@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ActivityStoreDetails"
+    tools:showIn="@layout/activity_store_details"
+    android:background="#fff"
+    android:id="@+id/nestedScrollView">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:id="@+id/contTopMap2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="#a8333333">
+
+                <ProgressBar
+                    android:id="@+id/loadMap"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"/>
+            </LinearLayout>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="3dp"
+                android:layout_gravity="end"
+                android:layout_margin="6dp">
+
+                <ImageButton
+                    android:id="@+id/btnFullMap"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_fullscreen_black_24dp"
+                    android:background="@drawable/riple_rect_default"
+                    tools:ignore="ContentDescription" />
+
+            </android.support.v7.widget.CardView>
+
+            <org.osmdroid.views.MapView
+                android:id="@+id/mapPreview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </org.osmdroid.views.MapView>
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="13dp"
+            android:paddingEnd="10dp"
+            android:paddingStart="13dp">
+
+            <TextView
+                android:text="Escolas Estaduais de Ensino - MA"
+                android:textSize="17sp"
+                android:id="@+id/txtTitle"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center|start"
+                style="@style/titleTableInformation"
+                android:importantForAutofill="auto"
+               android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/btnDownload"
+                android:text="R$ 250,90"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_gravity="end|center"
+                android:background="@drawable/riple_rect_btn_download"
+                android:textColor="#fff"
+                android:paddingLeft="15dp"
+                android:paddingStart="15dp"
+                android:paddingRight="15dp"
+                android:paddingEnd="15dp"
+                android:layout_margin="4dp"/>
+
+        </LinearLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="7dp"
+            android:paddingStart="12dp"
+            android:paddingEnd="10dp">
+
+            <TableRow>
+                <TextView
+                    android:text="Título: "
+                    style="@style/titleTableInformation" />
+                <TextView
+                    android:text="Escolas Estaduais de Ensino - MA"
+                    android:id="@+id/titleMetadado"
+                    style="@style/contTableInformation" />
+            </TableRow>
+
+
+
+                <TableRow>
+                    <TextView
+                        android:text="Categoria:"
+                        style="@style/titleTableInformation" />
+                    <TextView
+                        android:text="Serviços"
+                        android:id="@+id/categoryMetadado"
+                        style="@style/contTableInformation" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:text="Formato de Arquivo:"
+                        style="@style/titleTableInformation" />
+                    <TextView
+                        android:text="SHP (Shapefile)"
+                        android:id="@+id/fileFormatMetadado"
+                        style="@style/contTableInformation" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:text="Autor:"
+                        style="@style/titleTableInformation" />
+                    <TextView
+                        android:text="IBGE (Instituto Brasileiro de Geografia\n e Estatística)"
+                        android:id="@+id/autorMetadado"
+                        style="@style/contTableInformation" />
+                </TableRow>
+        </TableLayout>
+
+        <LinearLayout
+            android:id="@+id/containerMetadado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="7dp">
+
+            <View style="@style/border_horizon_basic_gray" />
+
+            <Button
+                android:id="@+id/btnOpenMetadado"
+                android:text="Metadados"
+                style="@style/BtnHide"/>
+
+            <include layout="@layout/content_webview_metadado" />
+
+            <View style="@style/border_horizon_basic_gray" />
+
+            <Button
+                android:id="@+id/btnOpenFildTable"
+                android:text="TABELA DE ATRIBUTOS"
+                style="@style/BtnHide"/>
+
+            <include layout="@layout/content_webview_fildstable" />
+
+            <View style="@style/border_horizon_basic_gray" />
+
+        </LinearLayout>
+
+        <TextView
+            android:text="Camadas relacionadas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="14dp"
+            android:layout_marginLeft="12dp"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:id="@+id/recyclerViewRelac" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="1dp"
+            android:paddingStart="1dp"
+            android:paddingRight="0dp"
+            android:paddingEnd="0dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginBottom="14dp"
+            android:layout_gravity="bottom">
+            <TextView
+                android:id="@+id/termsUse"
+                android:text="Termos de Uso"
+                style="@style/rodapeLinks"/>
+
+            <TextView
+                android:id="@+id/aboutGpay"
+                android:text="Google Pay"
+                style="@style/rodapeLinks"/>
+
+            <TextView
+                android:id="@+id/support"
+                android:text="Suporte"
+                style="@style/rodapeLinks"/>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

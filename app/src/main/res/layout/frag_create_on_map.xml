@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/content_grag"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/text001"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Crie uma nova camada sobre o mapa"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/text002"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tipo Geométrico"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="4dp"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioButton
+            android:text="Poligono"
+            android:id="@+id/typePolygon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <RadioButton
+            android:text="Ponto"
+            android:id="@+id/typePoint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <RadioButton
+            android:text="Linha"
+            android:id="@+id/typeLine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RadioGroup>
+
+    <EditText
+        android:hint="Nome da Camada"
+        android:id="@+id/layerName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"/>
+
+</LinearLayout>

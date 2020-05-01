@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:stretchColumns="1">
+
+    <TableRow>
+        <TextView
+            android:layout_span="2"
+            android:text="@string/identification"
+            style="@style/titleTableInformation" />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:text="@string/title"
+            style="@style/titleTableInformation" />
+        <TextView
+            android:text="ATLAS NACIONAL DO BRASIL MILTON SANTOS - Riscos Potenciais às espécies de peixes de água doce - Ameaças Potenciais e Vulnerabilidade por Exposição e por Fragilidade - Situação Futura"
+            android:id="@+id/contTitleMeta"
+            style="@style/contTableInformation" />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:text="@string/date"
+            style="@style/titleTableInformation" />
+        <TextView
+            android:text="2018"
+            android:id="@+id/contDateMeta"
+            style="@style/contTableInformation" />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:text="@string/series"
+            style="@style/titleTableInformation" />
+        <TextView
+            android:text="---"
+            android:id="@+id/contSerieMeta"
+            style="@style/contTableInformation" />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:text="@string/abstract1"
+            style="@style/titleTableInformation" />
+        <TextView
+            android:text="Pode-se avaliar os riscos potenciais futuros às espécies de peixes de água doce confrontando-se as informações sobre os níveis de ameaças potencias atuais (concentração de fontes de ameaças a partir de usos agropecuários e usos urbanos e rurais, associados aos projetos de implantação de hidrelétricas e termelétricas) e a localização das áreas de ocorrência dos peixes de água doce que ocorrem em áreas restritas (o que indica sua alta fragilidade). Para complementar a informação, contribuindo com uma possível análise dos graus futuros de vulnerabilidade, encontra-se, na prancha, o mapa 'Resiliência potencial futura da ictiofauna' - escala 1:40.000.000 - que apresenta as Unidades de Conservação Federais e Terras Indígenas, remanescentes de vegetação e as Áreas Prioritárias à Conservação da Biodiversidade, bem como a localização das áreas de ocorrência dos peixes."
+            android:id="@+id/contAbstractMeta"
+            style="@style/contTableInformation"
+            android:textIsSelectable="true" />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:text="@string/objective"
+            style="@style/titleTableInformation" />
+        <TextView
+            android:text="---"
+            android:id="@+id/contObjectiveMeta"
+            style="@style/contTableInformation" />
+    </TableRow>
+
+</TableLayout>

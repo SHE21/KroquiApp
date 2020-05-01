@@ -1,0 +1,7 @@
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/ic_loading_query" android:duration="400"/>
+    <item android:drawable="@drawable/ic_loading_query_2" android:duration="400"/>
+    <item android:drawable="@drawable/ic_loading_query_3" android:duration="400"/>
+
+</animation-list>

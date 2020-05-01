@@ -1,0 +1,90 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/content_grag"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/text001"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Importe um aquivo de dados geográficos para criar uma nova camada"
+        android:textSize="16sp" />
+    <TextView
+        android:id="@+id/text002"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Diretório do Arquivo"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="4dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/chooseFile">
+        <ImageButton
+            android:background="@drawable/ic_file_add_bag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="ContentDescription"
+            android:id="@+id/chooseFileBtn"/>
+        <TextView
+            android:text="Escolha um aquivo"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="start|center"
+            android:padding="4dp"
+            android:background="#F2F2F2"
+            android:layout_marginStart="3dp"
+            android:layout_marginLeft="3dp"
+            android:id="@+id/stringDir"/>
+    </LinearLayout>
+
+    <EditText
+        android:hint="Nome da Camada"
+        android:id="@+id/layerName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/previewMap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Preview"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="4dp"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="55dp">
+        <TextView
+            android:id="@+id/NoPreviewMap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nada para ver"
+            android:layout_gravity="center"/>
+
+        <ProgressBar
+            android:id="@+id/progrMapPreview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
+
+        <org.osmdroid.views.MapView
+            android:id="@+id/mapViewPreview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible">
+        </org.osmdroid.views.MapView>
+
+    </FrameLayout>
+
+</LinearLayout>

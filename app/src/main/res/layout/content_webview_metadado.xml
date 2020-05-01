@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:id="@+id/contentMetadado"
+    android:visibility="gone">
+    <TextView
+        android:id="@+id/noConnect"
+        android:text="@string/noConnect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:padding="5dp"
+        android:drawableStart="@drawable/ic_signal_wifi_off_black_24dp"
+        android:drawableLeft="@drawable/ic_signal_wifi_off_black_24dp" />
+    <ProgressBar
+        android:id="@+id/progWebView"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"/>
+    <WebView
+        android:id="@+id/webview_metadado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</FrameLayout>

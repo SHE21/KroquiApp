@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ActivityStore"
+    tools:showIn="@layout/activity_store"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <com.synnapps.carouselview.CarouselView
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            android:id="@+id/carouselTags"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            app:fillColor="#82ffffff"
+            app:pageColor="#00000000"
+            app:radius="4dp"
+            app:slideInterval="3000"
+            app:strokeColor="#82FFFFFF"
+            app:strokeWidth="1dp"/>
+
+        <TextView
+            android:text="Regiões continentais"
+            style="@style/subTitleTopStyle"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="4dp">
+
+            <ProgressBar
+                android:id="@+id/progStoreRegion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/recyRegion"
+                android:padding="3dp"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+            </android.support.v7.widget.RecyclerView>
+
+        </FrameLayout>
+
+        <TextView
+            android:text="Categorias de Camada"
+            style="@style/subTitleTopStyle"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="4dp">
+            <ProgressBar
+                android:id="@+id/progStore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/recyclerView"
+                android:padding="3dp"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+            </android.support.v7.widget.RecyclerView>
+
+        </FrameLayout>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

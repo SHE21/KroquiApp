@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#30409b</color>
+    <color name="colorPrimaryDark">#292929</color>
+    <color name="colorAccent">#000000</color>
+
+    <color name="defaultBack">#e2e2e2</color>
+    <color name="blackText">#333333</color>
+    <color name="blackDark">#000000</color>
+    <color name="grayText">#787878</color>
+
+    <color name="colorError">#e41f1f</color>
+    <color name="colorSucesse">#11b34c</color>
+    <color name="colorAlert">#f76504</color>
+    <color name="colorDica">#3484d9</color>
+
+    <color name="colorFillPolygon">#afe41f1f</color>
+    <color name="colorStrokPolygon">#660505</color>
+
+    <!-- -->
+    <color name="color00">#f21111</color>
+    <color name="color01">#e45a1f</color>
+    <color name="color02">#e4af1f</color>
+    <color name="color03">#92e41f</color>
+    <color name="color04">#2fe41f</color>
+    <color name="color05">#16bf3d</color>
+    <color name="color06">#1fe4b6</color>
+    <color name="color07">#1f78e4</color>
+    <color name="color08">#671fe4</color>
+    <color name="color09">#bd1fe4</color>
+    <color name="color10">#e41f74</color>
+
+    <!-- -->
+    <color name="color000">#970d0d</color>
+    <color name="color001">#aa400f</color>
+    <color name="color002">#b98c14</color>
+    <color name="color003">#6aa714</color>
+    <color name="color004">#22a417</color>
+    <color name="color005">#11942f</color>
+    <color name="color006">#149375</color>
+    <color name="color007">#114483</color>
+    <color name="color008">#3b1184</color>
+    <color name="color009">#66107b</color>
+    <color name="color010">#9f1651</color>
+    <color name="color011">#b3000000</color>
+    <!-- -->
+</resources>
